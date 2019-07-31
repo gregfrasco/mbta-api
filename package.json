@@ -1,0 +1,23 @@
+{
+  "name": "mbta-types",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs": "typedoc --out docs src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregfrasco/MBTAtypes.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregfrasco/MBTAtypes/issues"
+  },
+  "homepage": "https://github.com/gregfrasco/MBTAtypes#readme",
+  "devDependencies": {
+    "typedoc": "^0.15.0",
+    "typescript": "^3.5.3"
+  }
+}
