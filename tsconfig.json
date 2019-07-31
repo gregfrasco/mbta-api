@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "module": "es6"
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./lib",
+    "baseUrl": "./src"
   },
   "typedocOptions": {
     "mode": "modules",

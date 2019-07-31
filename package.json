@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "docs": "typedoc --out docs src"
   },
   "repository": {
