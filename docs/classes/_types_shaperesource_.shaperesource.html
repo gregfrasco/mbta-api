@@ -91,7 +91,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_shaperesource_.shaperesource.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_shaperesource_.shaperesource.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_shaperesource_.shaperesource.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_shaperesource_.shaperesource.html#polyline" class="tsd-kind-icon">polyline</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_shaperesource_.shaperesource.html#priority" class="tsd-kind-icon">priority</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,17 +103,72 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="direction_id" class="tsd-anchor"></a>
+					<h3>direction_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">direction_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types/ShapeResource.ts:9</li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ShapeResource.ts#L38">types/ShapeResource.ts:38</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The JSON-API resource type</p>
+							<p>Direction in which trip is traveling: &#39;0&#39; or &#39;1&#39;.</p>
+						</div>
+						<p>The meaning of &#39;direction_id&#39; varies based on the route. You can programmatically get the direction names from &#39;/routes&#39; &#39;/data/{index}/attributes/direction_names&#39; or &#39;/routes/{id}&#39; &#39;/data/attributes/direction_names&#39;.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ShapeResource.ts#L29">types/ShapeResource.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>User-facing name for shape. It may, but is not required to, be a headsign</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="polyline" class="tsd-anchor"></a>
+					<h3>polyline</h3>
+					<div class="tsd-signature tsd-kind-icon">polyline<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ShapeResource.ts#L24">types/ShapeResource.ts:24</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<a href="#encodingdecoding" id="encodingdecoding" style="color: inherit; text-decoration: none;">
+								<h2>Encoding/Decoding</h2>
+							</a>
+						</div>
+						<p><a href="https://developers.google.com/maps/documentation/utilities/polylinealgorithm">Encoded Polyline Algorithm Format</a></p>
+						<a href="#example-libraries" id="example-libraries" style="color: inherit; text-decoration: none;">
+							<h2>Example Libraries</h2>
+						</a>
+						<p><a href="https://www.npmjs.com/package/polyline">Javascript</a>
+							<a href="https://blog.kempkens.io/posts/encoding-and-decoding-polylines-with-erlang/">Erlang</a>
+						<a href="https://hex.pm/packages/polyline">Elixir</a></p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="priority" class="tsd-anchor"></a>
+					<h3>priority</h3>
+					<div class="tsd-signature tsd-kind-icon">priority<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ShapeResource.ts#L10">types/ShapeResource.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Representation of how important a shape is when choosing one for display. Higher number is higher priority.  Negative priority is not important enough to show as they only <strong>MAY</strong> be used.</p>
 						</div>
 					</div>
 				</section>
@@ -135,7 +193,16 @@
 						<a href="_types_shaperesource_.shaperesource.html" class="tsd-kind-icon">Shape<wbr>Resource</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_shaperesource_.shaperesource.html#type" class="tsd-kind-icon">type</a>
+								<a href="_types_shaperesource_.shaperesource.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_shaperesource_.shaperesource.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_shaperesource_.shaperesource.html#polyline" class="tsd-kind-icon">polyline</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_shaperesource_.shaperesource.html#priority" class="tsd-kind-icon">priority</a>
 							</li>
 						</ul>
 					</li>

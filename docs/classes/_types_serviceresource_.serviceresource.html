@@ -91,7 +91,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_serviceresource_.serviceresource.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_serviceresource_.serviceresource.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_serviceresource_.serviceresource.html#end_date" class="tsd-kind-icon">end_<wbr>date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_serviceresource_.serviceresource.html#schedule_name" class="tsd-kind-icon">schedule_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_serviceresource_.serviceresource.html#schedule_type" class="tsd-kind-icon">schedule_<wbr>type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_serviceresource_.serviceresource.html#schedule_typicality" class="tsd-kind-icon">schedule_<wbr>typicality</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_serviceresource_.serviceresource.html#start_date" class="tsd-kind-icon">start_<wbr>date</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,17 +105,126 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types/ServiceResource.ts:8</li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ServiceResource.ts#L46">types/ServiceResource.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The JSON-API resource type</p>
+							<p>Human-readable description of the service, as it should appear on public-facing websites and applications.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="end_date" class="tsd-anchor"></a>
+					<h3>end_<wbr>date</h3>
+					<div class="tsd-signature tsd-kind-icon">end_<wbr>date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ServiceResource.ts#L41">types/ServiceResource.ts:41</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Latest date which is valid for this service. Format is ISO8601.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="schedule_name" class="tsd-anchor"></a>
+					<h3>schedule_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">schedule_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ServiceResource.ts#L36">types/ServiceResource.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Description of when the &#39;service_id&#39; is in effect.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="schedule_type" class="tsd-anchor"></a>
+					<h3>schedule_<wbr>type</h3>
+					<div class="tsd-signature tsd-kind-icon">schedule_<wbr>type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ServiceResource.ts#L31">types/ServiceResource.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Description of the schedule type the service_id can be applied.
+								For example, on a holiday, the schedule_type value may be &quot;Saturday&quot; or &quot;Sunday&quot;.
+							Current valid values are &quot;Weekday&quot;, &quot;Saturday&quot;, &quot;Sunday&quot;, or &quot;Other&quot;</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="schedule_typicality" class="tsd-anchor"></a>
+					<h3>schedule_<wbr>typicality</h3>
+					<div class="tsd-signature tsd-kind-icon">schedule_<wbr>typicality<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ServiceResource.ts#L23">types/ServiceResource.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Describes how well this schedule represents typical service for the listed &#39;schedule_type&#39;</p>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>Not defined.</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>Typical service with perhaps minor modifications</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>Extra service supplements typical schedules</td>
+								</tr>
+								<tr>
+									<td>&#39;3&#39;</td>
+									<td>Reduced holiday service is provided by typical Saturday or Sunday schedule</td>
+								</tr>
+								<tr>
+									<td>&#39;4&#39;</td>
+									<td>Major changes in service due to a planned disruption, such as construction</td>
+								</tr>
+								<tr>
+									<td>&#39;5&#39;</td>
+									<td>Major reductions in service for weather events or other atypical situations</td>
+								</tr>
+						</tbody></table>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="start_date" class="tsd-anchor"></a>
+					<h3>start_<wbr>date</h3>
+					<div class="tsd-signature tsd-kind-icon">start_<wbr>date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ServiceResource.ts#L8">types/ServiceResource.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Earliest date which is valid for this service. Format is ISO8601.</p>
 						</div>
 					</div>
 				</section>
@@ -135,7 +249,22 @@
 						<a href="_types_serviceresource_.serviceresource.html" class="tsd-kind-icon">Service<wbr>Resource</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_serviceresource_.serviceresource.html#type" class="tsd-kind-icon">type</a>
+								<a href="_types_serviceresource_.serviceresource.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_serviceresource_.serviceresource.html#end_date" class="tsd-kind-icon">end_<wbr>date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_serviceresource_.serviceresource.html#schedule_name" class="tsd-kind-icon">schedule_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_serviceresource_.serviceresource.html#schedule_type" class="tsd-kind-icon">schedule_<wbr>type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_serviceresource_.serviceresource.html#schedule_typicality" class="tsd-kind-icon">schedule_<wbr>typicality</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_serviceresource_.serviceresource.html#start_date" class="tsd-kind-icon">start_<wbr>date</a>
 							</li>
 						</ul>
 					</li>

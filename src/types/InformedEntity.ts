@@ -22,7 +22,7 @@ export class InformedEntity {
    * | `4`   | Ferry         |            |
    * 
    */
-  route_type: string;
+  route_type: number;
 
   /**
    * Unique id of a route
@@ -41,6 +41,6 @@ export class InformedEntity {
    * 
    * 
    */
-  direction_id: string;
+  direction_id: number;
 
 }

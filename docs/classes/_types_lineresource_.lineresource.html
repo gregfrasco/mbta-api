@@ -91,7 +91,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_lineresource_.lineresource.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_lineresource_.lineresource.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_lineresource_.lineresource.html#long_name" class="tsd-kind-icon">long_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_lineresource_.lineresource.html#short_name" class="tsd-kind-icon">short_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_lineresource_.lineresource.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_lineresource_.lineresource.html#text_color" class="tsd-kind-icon">text_<wbr>color</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,17 +104,77 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="color" class="tsd-anchor"></a>
+					<h3>color</h3>
+					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/ba7c351/src/types/LineResource.ts#L8">types/LineResource.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/LineResource.ts#L32">types/LineResource.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The JSON-API resource type</p>
+							<p>In systems that have colors assigned to lines, the route_color field defines a color that corresponds to a line. The color must be provided as a six-character hexadecimal number, for example, &#39;00FFFF&#39;.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="long_name" class="tsd-anchor"></a>
+					<h3>long_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">long_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/LineResource.ts#L26">types/LineResource.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Lengthier, public-facing name for the group of routes represented in this line</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="short_name" class="tsd-anchor"></a>
+					<h3>short_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">short_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/LineResource.ts#L20">types/LineResource.ts:20</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Short, public-facing name for the group of routes represented in this line</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sort_order" class="tsd-anchor"></a>
+					<h3>sort_<wbr>order</h3>
+					<div class="tsd-signature tsd-kind-icon">sort_<wbr>order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/LineResource.ts#L14">types/LineResource.ts:14</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Lines sort in ascending order</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="text_color" class="tsd-anchor"></a>
+					<h3>text_<wbr>color</h3>
+					<div class="tsd-signature tsd-kind-icon">text_<wbr>color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/LineResource.ts#L9">types/LineResource.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This field can be used to specify a legible color to use for text drawn against a background of line_color. The color must be provided as a six-character hexadecimal number, for example, &#39;FFD700&#39;.</p>
 						</div>
 					</div>
 				</section>
@@ -135,7 +199,19 @@
 						<a href="_types_lineresource_.lineresource.html" class="tsd-kind-icon">Line<wbr>Resource</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_lineresource_.lineresource.html#type" class="tsd-kind-icon">type</a>
+								<a href="_types_lineresource_.lineresource.html#color" class="tsd-kind-icon">color</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_lineresource_.lineresource.html#long_name" class="tsd-kind-icon">long_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_lineresource_.lineresource.html#short_name" class="tsd-kind-icon">short_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_lineresource_.lineresource.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_lineresource_.lineresource.html#text_color" class="tsd-kind-icon">text_<wbr>color</a>
 							</li>
 						</ul>
 					</li>

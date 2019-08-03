@@ -92,7 +92,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#arrival_time" class="tsd-kind-icon">arrival_<wbr>time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#departure_time" class="tsd-kind-icon">departure_<wbr>time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#drop_off_type" class="tsd-kind-icon">drop_<wbr>off_<wbr>type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#pickup_type" class="tsd-kind-icon">pickup_<wbr>type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#stop_sequence" class="tsd-kind-icon">stop_<wbr>sequence</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_scheduleresource_.scheduleresource.html#timepoint" class="tsd-kind-icon">timepoint</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,18 +107,177 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="arrival_time" class="tsd-anchor"></a>
+					<h3>arrival_<wbr>time</h3>
+					<div class="tsd-signature tsd-kind-icon">arrival_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types/ScheduleResource.ts:11</li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ScheduleResource.ts#L76">types/ScheduleResource.ts:76</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The JSON-API resource type</p>
+							<p>Time when the trip arrives at the given stop. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stop_timestxt">GTFS &#39;stop_times.txt&#39; &#39;arrival_time&#39;</a>
+							Format is ISO8601.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="departure_time" class="tsd-anchor"></a>
+					<h3>departure_<wbr>time</h3>
+					<div class="tsd-signature tsd-kind-icon">departure_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ScheduleResource.ts#L69">types/ScheduleResource.ts:69</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Time when the trip departs the given stop. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stop_timestxt">GTFS &#39;stop_times.txt&#39; &#39;departure_time&#39;</a>
+							Format is ISO8601.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="direction_id" class="tsd-anchor"></a>
+					<h3>direction_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">direction_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ScheduleResource.ts#L62">types/ScheduleResource.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Direction in which trip is traveling: &#39;0&#39; or &#39;1&#39;.</p>
+						</div>
+						<p>The meaning of &#39;direction_id&#39; varies based on the route. You can programmatically get the direction names from &#39;/routes&#39; &#39;/data/{index}/attributes/direction_names&#39; or &#39;/routes/{id}&#39; &#39;/data/attributes/direction_names&#39;.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="drop_off_type" class="tsd-anchor"></a>
+					<h3>drop_<wbr>off_<wbr>type</h3>
+					<div class="tsd-signature tsd-kind-icon">drop_<wbr>off_<wbr>type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ScheduleResource.ts#L53">types/ScheduleResource.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>How the vehicle arrives at &#39;stop_id&#39;.</p>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>Regularly scheduled drop off</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>No drop off available</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>Must phone agency to arrange pickup</td>
+								</tr>
+								<tr>
+									<td>&#39;3&#39;</td>
+									<td>Must coordinate with driver to arrange pickup</td>
+								</tr>
+						</tbody></table>
+						<p>See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stop_timestxt">GTFS &#39;stop_times.txt&#39; &#39;drop_off_type&#39;</a></p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pickup_type" class="tsd-anchor"></a>
+					<h3>pickup_<wbr>type</h3>
+					<div class="tsd-signature tsd-kind-icon">pickup_<wbr>type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ScheduleResource.ts#L38">types/ScheduleResource.ts:38</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>How the vehicle departs from &#39;stop_id&#39;.</p>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>Regularly scheduled pickup</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>No pickup available</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>Must phone agency to arrange pickup</td>
+								</tr>
+								<tr>
+									<td>&#39;3&#39;</td>
+									<td>Must coordinate with driver to arrange pickup</td>
+								</tr>
+						</tbody></table>
+						<p>See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stop_timestxt">GTFS &#39;stop_times.txt&#39; &#39;pickup_type&#39;</a></p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="stop_sequence" class="tsd-anchor"></a>
+					<h3>stop_<wbr>sequence</h3>
+					<div class="tsd-signature tsd-kind-icon">stop_<wbr>sequence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ScheduleResource.ts#L23">types/ScheduleResource.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The sequence the &#39;stop_id&#39; is arrived at during the &#39;trip_id&#39;.  The stop sequence is monotonically increasing along the trip, but the &#39;stop_sequence&#39; along the &#39;trip_id&#39; are not necessarily consecutive.  See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stop_timestxt">GTFS &#39;stop_times.txt&#39; &#39;stop_sequence&#39;</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="timepoint" class="tsd-anchor"></a>
+					<h3>timepoint</h3>
+					<div class="tsd-signature tsd-kind-icon">timepoint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/ScheduleResource.ts#L17">types/ScheduleResource.ts:17</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<table>
+								<thead>
+									<tr>
+										<th>Value</th>
+										<th>&#39;undefinedattributes/arrival_time&#39; and &#39;undefinedattributes/departure_time&#39;</th>
+									</tr>
+								</thead>
+								<tbody><tr>
+										<td>&#39;true&#39;</td>
+										<td>Exact</td>
+									</tr>
+									<tr>
+										<td>&#39;false&#39;</td>
+										<td>Estimates</td>
+									</tr>
+							</tbody></table>
+						</div>
+						<p>See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stop_timestxt">GTFS &#39;stop_times.txt&#39; &#39;timepoint&#39;</a></p>
 					</div>
 				</section>
 			</section>
@@ -136,7 +301,25 @@
 						<a href="_types_scheduleresource_.scheduleresource.html" class="tsd-kind-icon">Schedule<wbr>Resource</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_scheduleresource_.scheduleresource.html#type" class="tsd-kind-icon">type</a>
+								<a href="_types_scheduleresource_.scheduleresource.html#arrival_time" class="tsd-kind-icon">arrival_<wbr>time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_scheduleresource_.scheduleresource.html#departure_time" class="tsd-kind-icon">departure_<wbr>time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_scheduleresource_.scheduleresource.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_scheduleresource_.scheduleresource.html#drop_off_type" class="tsd-kind-icon">drop_<wbr>off_<wbr>type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_scheduleresource_.scheduleresource.html#pickup_type" class="tsd-kind-icon">pickup_<wbr>type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_scheduleresource_.scheduleresource.html#stop_sequence" class="tsd-kind-icon">stop_<wbr>sequence</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_scheduleresource_.scheduleresource.html#timepoint" class="tsd-kind-icon">timepoint</a>
 							</li>
 						</ul>
 					</li>

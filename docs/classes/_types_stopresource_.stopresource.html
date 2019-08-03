@@ -91,7 +91,19 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#address" class="tsd-kind-icon">address</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#at_street" class="tsd-kind-icon">at_<wbr>street</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#latitude" class="tsd-kind-icon">latitude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#location_type" class="tsd-kind-icon">location_<wbr>type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#longitude" class="tsd-kind-icon">longitude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#municipality" class="tsd-kind-icon">municipality</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#on_street" class="tsd-kind-icon">on_<wbr>street</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#platform_code" class="tsd-kind-icon">platform_<wbr>code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#platform_name" class="tsd-kind-icon">platform_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#vehicle_type" class="tsd-kind-icon">vehicle_<wbr>type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_stopresource_.stopresource.html#wheelchair_boarding" class="tsd-kind-icon">wheelchair_<wbr>boarding</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,18 +112,284 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="address" class="tsd-anchor"></a>
+					<h3>address</h3>
+					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types/StopResource.ts:8</li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L106">types/StopResource.ts:106</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The JSON-API resource type</p>
+							<p>A street address for the station. See <a href="https://docs.google.com/document/d/1RoQQj3_-7FkUlzFP4RcK1GzqyHp4An2lTFtcmW0wrqw/view">MBTA extensions to GTFS</a>.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="at_street" class="tsd-anchor"></a>
+					<h3>at_<wbr>street</h3>
+					<div class="tsd-signature tsd-kind-icon">at_<wbr>street<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L100">types/StopResource.ts:100</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The cross street at which the stop is located.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L95">types/StopResource.ts:95</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Description of the stop. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt">GTFS &#39;stops.txt&#39; &#39;stop_desc&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="latitude" class="tsd-anchor"></a>
+					<h3>latitude</h3>
+					<div class="tsd-signature tsd-kind-icon">latitude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L89">types/StopResource.ts:89</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Latitude of the stop or station.  Degrees North, in the <a href="https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS.C2.A084">WGS-84</a> coordinate system. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt">GTFS &#39;stops.txt&#39; &#39;stop_lat&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="location_type" class="tsd-anchor"></a>
+					<h3>location_<wbr>type</h3>
+					<div class="tsd-signature tsd-kind-icon">location_<wbr>type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L83">types/StopResource.ts:83</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type of the stop.</p>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Type</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>Stop</td>
+									<td>A location where passengers board or disembark from a transit vehicle.</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>Station</td>
+									<td>A physical structure or area that contains one or more stops.</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>Station Entrance/Exit</td>
+									<td>A location where passengers can enter or exit a station from the street. The stop entry must also specify a parent_station value referencing the stop ID of the parent station for the entrance.</td>
+								</tr>
+								<tr>
+									<td>&#39;3&#39;</td>
+									<td>Generic Node</td>
+									<td>A location within a station, not matching any other location_type, which can be used to link together pathways defined in pathways.txt.</td>
+								</tr>
+						</tbody></table>
+						<p>See also <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt">GTFS &#39;stops.txt&#39; &#39;location_type&#39;</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="longitude" class="tsd-anchor"></a>
+					<h3>longitude</h3>
+					<div class="tsd-signature tsd-kind-icon">longitude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L68">types/StopResource.ts:68</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Longitude of the stop or station. Degrees East, in the <a href="https://en.wikipedia.org/wiki/World_Geodetic_System#Longitudes_on_WGS.C2.A084">WGS-84</a> coordinate system. See
+							<a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt">GTFS &#39;stops.txt&#39; &#39;stop_lon&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="municipality" class="tsd-anchor"></a>
+					<h3>municipality</h3>
+					<div class="tsd-signature tsd-kind-icon">municipality<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L61">types/StopResource.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The municipality in which the stop is located.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L56">types/StopResource.ts:56</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Name of a stop or station in the local and tourist vernacular.  See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt">GTFS &#39;stops.txt&#39; &#39;stop_name</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="on_street" class="tsd-anchor"></a>
+					<h3>on_<wbr>street</h3>
+					<div class="tsd-signature tsd-kind-icon">on_<wbr>street<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L50">types/StopResource.ts:50</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The street on which the stop is located.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="platform_code" class="tsd-anchor"></a>
+					<h3>platform_<wbr>code</h3>
+					<div class="tsd-signature tsd-kind-icon">platform_<wbr>code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L45">types/StopResource.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A short code representing the platform/track (like a number or letter). See <a href="https://developers.google.com/transit/gtfs/reference/gtfs-extensions#stopstxt_1">GTFS &#39;stops.txt&#39; &#39;platform_code&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="platform_name" class="tsd-anchor"></a>
+					<h3>platform_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">platform_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L39">types/StopResource.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A textual description of the platform or track. See <a href="https://docs.google.com/document/d/1RoQQj3_-7FkUlzFP4RcK1GzqyHp4An2lTFtcmW0wrqw/view">MBTA extensions to GTFS</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="vehicle_type" class="tsd-anchor"></a>
+					<h3>vehicle_<wbr>type</h3>
+					<div class="tsd-signature tsd-kind-icon">vehicle_<wbr>type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L33">types/StopResource.ts:33</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type of transportation used at the stop. &#39;vehicle_type&#39; will be a valid routes.txt &#39;route_type&#39; value:</p>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Name</th>
+									<th>Example</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>Light Rail</td>
+									<td>Green Line</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>Heavy Rail</td>
+									<td>Red Line</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>Commuter Rail</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>&#39;3&#39;</td>
+									<td>Bus</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>&#39;4&#39;</td>
+									<td>Ferry</td>
+									<td></td>
+								</tr>
+						</tbody></table>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="wheelchair_boarding" class="tsd-anchor"></a>
+					<h3>wheelchair_<wbr>boarding</h3>
+					<div class="tsd-signature tsd-kind-icon">wheelchair_<wbr>boarding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/StopResource.ts#L18">types/StopResource.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether there are any vehicles with wheelchair boarding or paths to stops that are wheelchair acessible: 0, 1, 2.</p>
+						</div>
+						<p>Wheelchair boarding (&#39;undefinedattributes/wheelchair_boarding&#39;) corresponds to <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt">GTFS wheelchair_boarding</a>. The MBTA handles parent station inheritance itself, so value can be treated simply:</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Meaning</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>No Information</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>Accessible (if trip is wheelchair accessible)</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>Inaccessible</td>
+								</tr>
+						</tbody></table>
 					</div>
 				</section>
 			</section>
@@ -135,7 +413,43 @@
 						<a href="_types_stopresource_.stopresource.html" class="tsd-kind-icon">Stop<wbr>Resource</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_stopresource_.stopresource.html#type" class="tsd-kind-icon">type</a>
+								<a href="_types_stopresource_.stopresource.html#address" class="tsd-kind-icon">address</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#at_street" class="tsd-kind-icon">at_<wbr>street</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#latitude" class="tsd-kind-icon">latitude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#location_type" class="tsd-kind-icon">location_<wbr>type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#longitude" class="tsd-kind-icon">longitude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#municipality" class="tsd-kind-icon">municipality</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#on_street" class="tsd-kind-icon">on_<wbr>street</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#platform_code" class="tsd-kind-icon">platform_<wbr>code</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#platform_name" class="tsd-kind-icon">platform_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#vehicle_type" class="tsd-kind-icon">vehicle_<wbr>type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_stopresource_.stopresource.html#wheelchair_boarding" class="tsd-kind-icon">wheelchair_<wbr>boarding</a>
 							</li>
 						</ul>
 					</li>

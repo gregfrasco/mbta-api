@@ -12,8 +12,31 @@ The lack of an 'ELEVATOR' MAY NOT make a stop wheelchair inaccessible.  Riders s
  */
 export class FacilityResource {
   /**
-   * The JSON-API resource type
+   * The type of the facility.
    */
   type: string;
+
+  /**
+   * Short name of the facility
+   */
+  short_name: string;
+
+  /**
+   * Longitude of the facility. Degrees East, in the [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#Longitudes_on_WGS.C2.A084) coordinate system. See
+[GTFS 'facilities.txt' 'facility_lon']
+
+   */
+  longitude: number;
+
+  /**
+   * Name of the facility
+   */
+  long_name: string;
+
+  /**
+   * Latitude of the facility.  Degrees North, in the [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS.C2.A084) coordinate system. See [GTFS 'facilities.txt' 'facility_lat']
+
+   */
+  latitude: number;
 
 }

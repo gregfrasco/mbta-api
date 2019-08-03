@@ -4,8 +4,8 @@
  */
 export class LiveFacilityResource {
   /**
-   * The JSON-API resource type
+   * Time of last update
    */
-  type: string;
+  updated_at: string;
 
 }
