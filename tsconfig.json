@@ -4,7 +4,9 @@
     "module": "commonjs",
     "sourceMap": true,
     "outDir": "./lib",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "declaration": true,
+    "lib": ["dom", "es5", "es6"]
   },
   "typedocOptions": {
     "mode": "modules",

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RoutePatterns | mbta-types</title>
+	<title>RoutePatterns | mbta-api-typescript</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">mbta-types</a>
+					<a href="../index.html" class="title">mbta-api-typescript</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Information about the different variations of service that may be run within a single route_id, including when and how often they are operated.</p>
+						<p>A page of <a href="#routepatternresource">RoutePatternResource</a> results</p>
 					</div>
 				</div>
 			</section>
@@ -84,108 +84,6 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_routepatterns_.routepatterns.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_routepatterns_.routepatterns.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_routepatterns_.routepatterns.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_routepatterns_.routepatterns.html#time_desc" class="tsd-kind-icon">time_<wbr>desc</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_routepatterns_.routepatterns.html#typicality" class="tsd-kind-icon">typicality</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="direction_id" class="tsd-anchor"></a>
-					<h3>direction_<wbr>id</h3>
-					<div class="tsd-signature tsd-kind-icon">direction_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/master/src/types/RoutePatterns.ts#L35">types/RoutePatterns.ts:35</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Direction in which trip is traveling: 0 or 1.
-							The meaning of direction_id varies based on the route. You can programmatically get the direction names from /routes</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/master/src/types/RoutePatterns.ts#L29">types/RoutePatterns.ts:29</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>User-facing description of where trips on the route pattern serve.These names are published in the form Destination, Destination via Street or Landmark, Origin - Destination, or Origin - Destination via Street or Landmark. Note that names for bus and subway route patterns currently do not include the origin location, but will in the future.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="sort_order" class="tsd-anchor"></a>
-					<h3>sort_<wbr>order</h3>
-					<div class="tsd-signature tsd-kind-icon">sort_<wbr>order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/master/src/types/RoutePatterns.ts#L24">types/RoutePatterns.ts:24</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Can be used to order the route patterns in a way which is ideal for presentation to customers.
-							Route patterns with smaller sort_order values should be displayed before those with larger values.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="time_desc" class="tsd-anchor"></a>
-					<h3>time_<wbr>desc</h3>
-					<div class="tsd-signature tsd-kind-icon">time_<wbr>desc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/master/src/types/RoutePatterns.ts#L18">types/RoutePatterns.ts:18</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>User-facing description of when the route pattern operate. Not all route patterns will include a time description</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="typicality" class="tsd-anchor"></a>
-					<h3>typicality</h3>
-					<div class="tsd-signature tsd-kind-icon">typicality<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/master/src/types/RoutePatterns.ts#L13">types/RoutePatterns.ts:13</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Explains how common the route pattern is. For the MBTA, this is within the context of the entire route. Current valid values are:<br>
-								0: Not defined<br>
-								1: Typical. Pattern is common for the route. Most routes will have only one such pattern per direction. A few routes may have more than 1, such as the Red Line (with one branch to Ashmont and another to Braintree); routes with more than 2 are rare.<br>
-								2: Pattern is a deviation from the regular route.<br>
-								3: Pattern represents a highly atypical pattern for the route, such as a special routing which only runs a handful of times per day.<br>
-							4: Diversions from normal service, such as planned detours, bus shuttles, or snow routes.<br></p>
-						</div>
-					</div>
-				</section>
-			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -193,23 +91,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_types_activeperiod_.html">"types/<wbr>Active<wbr>Period"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_types_lineresource_.html">"types/<wbr>Line<wbr>Resource"</a>
-					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_types_routepatterns_.html">"types/<wbr>Route<wbr>Patterns"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_types_stop_.html">"types/<wbr>Stop"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_types_tripresource_.html">"types/<wbr>Trip<wbr>Resource"</a>
 					</li>
 				</ul>
 			</nav>
@@ -219,23 +102,6 @@
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_types_routepatterns_.routepatterns.html" class="tsd-kind-icon">Route<wbr>Patterns</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_routepatterns_.routepatterns.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_routepatterns_.routepatterns.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_routepatterns_.routepatterns.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_routepatterns_.routepatterns.html#time_desc" class="tsd-kind-icon">time_<wbr>desc</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_routepatterns_.routepatterns.html#typicality" class="tsd-kind-icon">typicality</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
