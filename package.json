@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "webpack",
     "docs": "typedoc --out docs src",
-    "convert": "ts-node scripts/swaggerToModels.ts"
+    "convert": "ts-node scripts/swaggerToModels.ts",
+    "watch:build": "webpack --watch",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "test": "ts-node test/index.ts"
   },
   "repository": {
     "type": "git",
@@ -20,9 +24,18 @@
   "homepage": "https://github.com/gregfrasco/MBTAtypes#readme",
   "devDependencies": {
     "@types/node": "^12.6.9",
-    "got": "^9.6.0",
     "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "ts-loader": "^6.0.4",
     "typedoc": "^0.15.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "ts-jsonapi": "^2.1.2"
   }
 }

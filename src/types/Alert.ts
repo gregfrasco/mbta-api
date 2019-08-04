@@ -1,5 +1,6 @@
 import {Facility} from './Facility';
 import {ActivePeriod} from "./ActivePeriod";
+import {InformedEntity} from "./InformedEntity";
 /**
  * An effect (enumerated in 'undefinedattributes/effect' and human-readable in 'undefinedattributes/service_effect') on a provided service (facility, route, route type, stop and/or trip in '/undefinedattributes/informed_entity') described by a banner ('undefinedattributes/banner'), short header ('undefinedattributes/short_header'), header 'undefinedattributes/header', and description ('undefinedattributes/description') that is active for one or more periods ('undefinedattributes/active_period') caused by a cause ('undefinedattribute/cause') that somewhere in its lifecycle (enumerated in 'undefinedattributes/lifecycle' and human-readable in 'undefinedattributes/timeframe').
 
@@ -35,6 +36,8 @@ import {ActivePeriod} from "./ActivePeriod";
 
  */
 export class Alert {
+
+    id: string;
     /**
      * A URL for extra details, such as outline construction or maintenance plans.
      */
@@ -43,7 +46,7 @@ export class Alert {
     /**
      * Date/Time alert last updated. Format is ISO8601.
      */
-    updated_at: string;
+    updatedAt: string;
 
     /**
      * Summarizes when an alert is in effect.
@@ -53,7 +56,7 @@ export class Alert {
     /**
      * A shortened version of 'undefinedattributes/header'.
      */
-    short_header: string;
+    shortHeader: string;
 
     /**
      * How severe the alert it from least ('0') to most ('10') severe.
@@ -63,7 +66,7 @@ export class Alert {
     /**
      * Summarizes the service and the impact to that service.
      */
-    service_effect: string;
+    serviceEffect: string;
 
     /**
      * Identifies whether alert is a new or old, in effect or upcoming.
@@ -84,11 +87,6 @@ export class Alert {
 
      */
     header: string;
-
-    /**
-     * Name of the alert
-     */
-    effect_name: string;
 
     /**
      * The effect of this problem on the affected entity.
@@ -143,7 +141,7 @@ export class Alert {
     /**
      * Date/Time alert created. Format is ISO8601.
      */
-    created_at: string;
+    createdAt: string;
 
     /**
      * What is causing the alert.
@@ -212,6 +210,8 @@ export class Alert {
     /**
      * Start and End dates for active alert
      */
-    activity_period: ActivePeriod[]
+    activityPeriod: ActivePeriod[];
+
+    informedEntity: InformedEntity[];
 
 }

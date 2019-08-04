@@ -2,15 +2,18 @@
  * Object representing a particular part of the system affected by an alert
  */
 export class InformedEntity {
+
+    activities: string[];
+
   /**
    * Unique id of a trip
    */
-  trip: string;
+  trip?: string;
 
   /**
    * Unique id of a stop
    */
-  stop: string;
+  stop?: string;
 
   /**
    * | Value | Name          | Example    |
@@ -22,25 +25,25 @@ export class InformedEntity {
    * | `4`   | Ferry         |            |
    * 
    */
-  route_type: number;
+  routeType?: number;
 
   /**
    * Unique id of a route
    */
-  route: string;
+  route?: string;
 
   /**
    * Unique id of a facility
    */
-  facility: string;
+  facility?: string;
 
   /**
    * Direction in which trip is traveling: `0` or `1`.
-   * 
+   *
    * The meaning of `direction_id` varies based on the route. You can programmatically get the direction names from `/routes` `/data/{index}/attributes/direction_names` or `/routes/{id}` `/data/attributes/direction_names`.
-   * 
-   * 
+   *
+   *
    */
-  direction_id: number;
+  directionId?: number;
 
 }

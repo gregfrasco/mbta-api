@@ -14,7 +14,10 @@ import { Stop } from './types/Stop'
 import { Trip } from './types/Trip'
 import { Vehicle } from './types/Vehicle'
 
+import { Client } from './api/client';
+
 export {
+    Client,
     ActivePeriod,
     Activity,
     Alert,
