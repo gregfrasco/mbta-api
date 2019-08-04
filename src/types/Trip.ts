@@ -7,6 +7,8 @@ import {Shape} from './Shape';
 
  */
 export class Trip {
+
+    id: string;
     /**
      * Indicator of wheelchair accessibility: '0', '1', '2'
 
@@ -20,7 +22,7 @@ export class Trip {
 
 
      */
-    wheelchair_accessible: number;
+    wheelchairAccessible: number;
 
     /**
      * The text that appears in schedules and sign boards to identify the trip to passengers, for example, to identify train numbers for commuter rail trips. See [GTFS 'trips.txt' 'trip_short_name'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt)
@@ -41,13 +43,13 @@ export class Trip {
 
 
      */
-    direction_id: number;
+    directionId: number;
 
     /**
      * ID used to group sequential trips with the same vehicle for a given service_id. See [GTFS 'trips.txt' 'block_id'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt)
 
      */
-    block_id: string;
+    blockId: string;
 
     /**
      * Indicator of whether or not bikes are allowed on this trip: '0', '1', '2'
@@ -62,7 +64,7 @@ export class Trip {
 
 
      */
-    bikes_allowed: number;
+    bikesAllowed: number;
 
     /**
      * A JSON-API document with a single [ShapeResource](#shaperesource) resource
@@ -77,7 +79,7 @@ export class Trip {
     /**
      *
      */
-    route_pattern?: RoutePattern;
+    routePattern?: RoutePattern;
 
     /**
      * A JSON-API document with a single [RouteResource](#routeresource) resource

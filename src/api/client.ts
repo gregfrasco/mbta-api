@@ -1,6 +1,8 @@
 import axios from 'axios';
 import * as jsonapi from 'ts-jsonapi';
-import {Alert} from "..";
+import {Alert, Vehicle} from "..";
+import {Schedule} from "../types/Schedule";
+import {Prediction} from "../types/Prediction";
 
 
 const BASE_URL = 'https://api-v3.mbta.com';
@@ -16,16 +18,20 @@ export class Client {
         this.apiKey = apiKey;
     }
 
-    async getAlerts(route?:string, includes?:['stops', 'routes', 'trips', 'facilities']): Promise<Alert[]> {
+    async getAlerts(route?:string, includes?:Array<'stops'|'routes'|'trips'|'facilities'>): Promise<Alert[]> {
         return await this.mbtaRequest('/alerts', route, includes);
     }
 
-    async getPredictions(route?:string, includes?:['schedule', 'stop', 'route', 'trip', 'vehicle', 'alerts']): Promise<Alert[]> {
+    async getPredictions(route?:string, includes?:Array<'schedule'|'stop'|'route'|'trip'|'vehicle'|'alerts'>): Promise<Prediction[]> {
         return await this.mbtaRequest('/predictions', route, includes);
     }
 
-    async getVehicles(route?:string, includes?:['stop', 'route', 'trip']): Promise<Alert[]> {
+    async getVehicles(route?:string, includes?:Array<'stop'|'route'|'trip'>): Promise<Vehicle[]> {
         return await this.mbtaRequest('/vehicles', route, includes);
+    }
+
+    async getSchedule(route?:string, includes?:Array<'stop'|'route'|'trip'|'prediction'>): Promise<Schedule[]> {
+        return await this.mbtaRequest('/schedule', route, includes);
     }
 
     private async mbtaRequest(url: string, route: string, includes: string[]) {

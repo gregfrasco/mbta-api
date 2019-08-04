@@ -9,6 +9,8 @@ See [GTFS 'stop_times.txt'](https://github.com/google/transit/blob/master/gtfs/s
 
  */
 export class Schedule {
+
+  id: string;
   /**
    * | Value   | 'undefinedattributes/arrival_time' and 'undefinedattributes/departure_time' |
 |---------|---------------------------------------------------------------|

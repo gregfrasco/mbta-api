@@ -2,3 +2,8 @@ src
 docs
 .idea
 tsconfig.json
+tslint.json
+webpack.config.js
+build/*
+lib/test/*
+test/*

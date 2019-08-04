@@ -3,6 +3,8 @@
 
  */
 export class Route {
+
+    id: string;
     /**
      * | Value | Name          | Example    |
      |-------|---------------|------------|
@@ -19,30 +21,30 @@ export class Route {
      * A legible color to use for text drawn against a background of the route's 'color' attribute. See [GTFS 'routes.txt' 'route_text_color'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt).
 
      */
-    text_color: string;
+    textColor: string;
 
     /**
      * Routes sort in ascending order
      */
-    sort_order: number;
+    sortOrder: number;
 
     /**
      * This will often be a short, abstract identifier like "32", "100X", or "Green" that riders use to identify a route, but which doesn't give any indication of what places the route serves. See [GTFS 'routes.txt' 'route_short_name'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt).
 
      */
-    short_name: string;
+    shortName: string;
 
     /**
      * The full name of a route. This name is generally more descriptive than the 'short_name' and will often include the route's destination or stop. See [GTFS 'routes.txt' 'route_long_name'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt).
 
      */
-    long_name: string;
+    longName: string;
 
     /**
      * Specifies the fare type of the route, which can differ from the service category.
 
      */
-    fare_class: string;
+    fareClass: string;
 
     /**
      * Details about stops, schedule, and/or service.  See

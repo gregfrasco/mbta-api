@@ -12,6 +12,8 @@ See [GTFS Realtime 'FeedMesage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate'](http
 
  */
 export class Prediction {
+
+  id: string;
   /**
    * The sequence the stop ('undefinedrelationships/stop/data/id') is arrived at during the trip ('undefinedrelationships/trip/data/id').  The stop sequence is monotonically increasing along the trip, but the 'stop_sequence' along the trip are not necessarily consecutive.
    * See [GTFS Realtime 'FeedMesage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate' 'stop_sequence'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-stoptimeupdate).
@@ -93,7 +95,5 @@ Format is ISO8601.
    * A page of [AlertResource](#alertresource) results
    */
   alerts?: Alert[];
-
-  id: string;
 
 }
