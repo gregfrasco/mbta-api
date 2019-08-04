@@ -20,8 +20,15 @@ export class Client {
         return await this.mbtaRequest('/alerts', route, includes);
     }
 
+    async getPredictions(route?:string, includes?:['schedule', 'stop', 'route', 'trip', 'vehicle', 'alerts']): Promise<Alert[]> {
+        return await this.mbtaRequest('/predictions', route, includes);
+    }
+
+    async getVehicles(route?:string, includes?:['stop', 'route', 'trip']): Promise<Alert[]> {
+        return await this.mbtaRequest('/vehicles', route, includes);
+    }
+
     private async mbtaRequest(url: string, route: string, includes: string[]) {
-        console.log(this.buildUrl(url, route, includes));
         const raw = await axios.get(this.buildUrl(url, route, includes));
         return Deserializer.deserialize(raw.data);
     }

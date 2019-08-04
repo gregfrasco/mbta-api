@@ -14,11 +14,9 @@ See [GTFS Realtime 'FeedMesage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate'](http
 export class Prediction {
   /**
    * The sequence the stop ('undefinedrelationships/stop/data/id') is arrived at during the trip ('undefinedrelationships/trip/data/id').  The stop sequence is monotonically increasing along the trip, but the 'stop_sequence' along the trip are not necessarily consecutive.
-
-See [GTFS Realtime 'FeedMesage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate' 'stop_sequence'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-stoptimeupdate).
-
+   * See [GTFS Realtime 'FeedMesage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate' 'stop_sequence'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-stoptimeupdate).
    */
-  stop_sequence: string;
+  stopSequence: string;
 
   /**
    * Status of the schedule
@@ -41,7 +39,7 @@ See [GTFS Realtime 'FeedMesage' 'FeedEntity' 'TripUpdate' 'TripDescriptor' 'Sche
 See [GTFS Realtime 'FeedMesage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate' 'ScheduleRelationship'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#enum-schedulerelationship)
 
    */
-  schedule_relationship: string;
+  scheduleRelationship: string;
 
   /**
    * Direction in which trip is traveling: '0' or '1'.
@@ -50,21 +48,21 @@ The meaning of 'direction_id' varies based on the route. You can programmaticall
 
 
    */
-  direction_id: number;
+  directionId: number;
 
   /**
    * When the vehicle is now predicted to depart.  'null' if the last stop ('undefinedrelationships/stop/data/id') on the trip ('undefinedrelationships/trip/data/id'). See [GTFS 'Realtime' 'FeedMessage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate' 'departure'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-stoptimeupdate).
 Format is ISO8601.
 
    */
-  departure_time: string;
+  departureTime: string;
 
   /**
    * When the vehicle is now predicted to arrive.  'null' if the first stop ('undefinedrelationships/stop/data/id') on the trip ('undefinedrelationships/trip/data/id'). See [GTFS 'Realtime' 'FeedMessage' 'FeedEntity' 'TripUpdate' 'StopTimeUpdate' 'arrival'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-stoptimeupdate).
 Format is ISO8601.
 
    */
-  arrival_time: string;
+  arrivalTime: string;
 
   /**
    * A JSON-API document with a single [VehicleResource](#vehicleresource) resource
@@ -95,5 +93,7 @@ Format is ISO8601.
    * A page of [AlertResource](#alertresource) results
    */
   alerts?: Alert[];
+
+  id: string;
 
 }

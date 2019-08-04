@@ -5,10 +5,12 @@ import {Trip} from './Trip';
  * Current state of a vehicle on a trip.
  */
 export class Vehicle {
+
+    id: string;
     /**
      * Time at which vehicle information was last updated. Format is ISO8601.
      */
-    updated_at: string;
+    updatedAt: string;
 
     /**
      * Speed that the vehicle is traveling in meters per second. See [GTFS-realtime Position speed](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-position).
@@ -37,12 +39,12 @@ export class Vehicle {
 
 
      */
-    direction_id: number;
+    directionId: number;
 
     /**
      * Index of current stop along trip. See [GTFS-realtime VehiclePosition current_stop_sequence](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-vehicleposition)
      */
-    current_stop_sequence: number;
+    currentStopSequence: number;
 
     /**
      * Status of vehicle relative to the stops. See [GTFS-realtime VehicleStopStatus](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#enum-vehiclestopstatus).
@@ -55,7 +57,7 @@ export class Vehicle {
 
 
      */
-    current_status: string;
+    currentStatus: string;
 
     /**
      * Bearing, in degrees, clockwise from True North, i.e., 0 is North and 90 is East. This can be the compass bearing, or the direction towards the next stop or intermediate location. See [GTFS-realtime Position bearing](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-position).
