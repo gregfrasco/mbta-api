@@ -16,12 +16,23 @@ export class Client {
         this.apiKey = apiKey;
     }
 
-    async getAlerts(route?:string, includes?:string): Promise<Alert[]> {
-        return await this.mbtaRequest('/alerts');
+    async getAlerts(route?:string, includes?:['stops', 'routes', 'trips', 'facilities']): Promise<Alert[]> {
+        return await this.mbtaRequest('/alerts', route, includes);
     }
 
-    private async mbtaRequest(url) {
-        const raw = await axios.get(`${BASE_URL}${url}`);
+    private async mbtaRequest(url: string, route: string, includes: string[]) {
+        console.log(this.buildUrl(url, route, includes));
+        const raw = await axios.get(this.buildUrl(url, route, includes));
         return Deserializer.deserialize(raw.data);
+    }
+
+    private buildUrl(tag, route?:string, includes?:string[], apiKey?:string) {
+        let url = `${BASE_URL}${tag}`;
+        let extras = 0;
+        if(includes) {
+            url += `?filter[route]=${route}&include=${includes.join(',')}`;
+            extras += 1;
+        }
+        return url;
     }
 }

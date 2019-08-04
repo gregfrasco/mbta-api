@@ -1,6 +1,8 @@
 import {Facility} from './Facility';
 import {ActivePeriod} from "./ActivePeriod";
 import {InformedEntity} from "./InformedEntity";
+import {Route} from "./Route";
+import {Stop} from "./Stop";
 /**
  * An effect (enumerated in 'undefinedattributes/effect' and human-readable in 'undefinedattributes/service_effect') on a provided service (facility, route, route type, stop and/or trip in '/undefinedattributes/informed_entity') described by a banner ('undefinedattributes/banner'), short header ('undefinedattributes/short_header'), header 'undefinedattributes/header', and description ('undefinedattributes/description') that is active for one or more periods ('undefinedattributes/active_period') caused by a cause ('undefinedattribute/cause') that somewhere in its lifecycle (enumerated in 'undefinedattributes/lifecycle' and human-readable in 'undefinedattributes/timeframe').
 
@@ -213,5 +215,9 @@ export class Alert {
     activityPeriod: ActivePeriod[];
 
     informedEntity: InformedEntity[];
+
+    routes: Route[];
+
+    stops: Stop[];
 
 }
