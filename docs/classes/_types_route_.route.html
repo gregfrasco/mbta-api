@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A JSON-API document with a single <a href="#routeresource">RouteResource</a> resource</p>
+						<p>Path a vehicle travels during service. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt">GTFS &#39;routes.txt</a> for the base specification.</p>
 					</div>
 				</div>
 			</section>
@@ -84,6 +84,183 @@
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#fare_class" class="tsd-kind-icon">fare_<wbr>class</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#long_name" class="tsd-kind-icon">long_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#short_name" class="tsd-kind-icon">short_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#text_color" class="tsd-kind-icon">text_<wbr>color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_route_.route.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="color" class="tsd-anchor"></a>
+					<h3>color</h3>
+					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L58">types/Route.ts:58</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A color that corresponds to the route, such as the line color on a map.&quot; See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt">GTFS &#39;routes.txt&#39; &#39;route_color&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L52">types/Route.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Details about stops, schedule, and/or service.  See
+							<a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt">GTFS &#39;routes.txt&#39; &#39;route_desc&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="fare_class" class="tsd-anchor"></a>
+					<h3>fare_<wbr>class</h3>
+					<div class="tsd-signature tsd-kind-icon">fare_<wbr>class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L45">types/Route.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Specifies the fare type of the route, which can differ from the service category.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="long_name" class="tsd-anchor"></a>
+					<h3>long_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">long_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L39">types/Route.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The full name of a route. This name is generally more descriptive than the &#39;short_name&#39; and will often include the route&#39;s destination or stop. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt">GTFS &#39;routes.txt&#39; &#39;route_long_name&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="short_name" class="tsd-anchor"></a>
+					<h3>short_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">short_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L33">types/Route.ts:33</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This will often be a short, abstract identifier like &quot;32&quot;, &quot;100X&quot;, or &quot;Green&quot; that riders use to identify a route, but which doesn&#39;t give any indication of what places the route serves. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt">GTFS &#39;routes.txt&#39; &#39;route_short_name&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sort_order" class="tsd-anchor"></a>
+					<h3>sort_<wbr>order</h3>
+					<div class="tsd-signature tsd-kind-icon">sort_<wbr>order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L27">types/Route.ts:27</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Routes sort in ascending order</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="text_color" class="tsd-anchor"></a>
+					<h3>text_<wbr>color</h3>
+					<div class="tsd-signature tsd-kind-icon">text_<wbr>color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L22">types/Route.ts:22</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A legible color to use for text drawn against a background of the route&#39;s &#39;color&#39; attribute. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt">GTFS &#39;routes.txt&#39; &#39;route_text_color&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Route.ts#L16">types/Route.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<table>
+								<thead>
+									<tr>
+										<th>Value</th>
+										<th>Name</th>
+										<th>Example</th>
+									</tr>
+								</thead>
+								<tbody><tr>
+										<td>&#39;0&#39;</td>
+										<td>Light Rail</td>
+										<td>Green Line</td>
+									</tr>
+									<tr>
+										<td>&#39;1&#39;</td>
+										<td>Heavy Rail</td>
+										<td>Red Line</td>
+									</tr>
+									<tr>
+										<td>&#39;2&#39;</td>
+										<td>Commuter Rail</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>&#39;3&#39;</td>
+										<td>Bus</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>&#39;4&#39;</td>
+										<td>Ferry</td>
+										<td></td>
+									</tr>
+							</tbody></table>
+						</div>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -91,8 +268,59 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activeperiod_.html">"types/<wbr>Active<wbr>Period"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activity_.html">"types/<wbr>Activity"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_alert_.html">"types/<wbr>Alert"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facility_.html">"types/<wbr>Facility"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facilityproperty_.html">"types/<wbr>Facility<wbr>Property"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_informedentity_.html">"types/<wbr>Informed<wbr>Entity"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_line_.html">"types/<wbr>Line"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_livefacility_.html">"types/<wbr>Live<wbr>Facility"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_prediction_.html">"types/<wbr>Prediction"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_types_route_.html">"types/<wbr>Route"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_routepattern_.html">"types/<wbr>Route<wbr>Pattern"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_schedule_.html">"types/<wbr>Schedule"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_service_.html">"types/<wbr>Service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_shape_.html">"types/<wbr>Shape"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_stop_.html">"types/<wbr>Stop"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_trip_.html">"types/<wbr>Trip"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_vehicle_.html">"types/<wbr>Vehicle"</a>
 					</li>
 				</ul>
 			</nav>
@@ -102,6 +330,32 @@
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_types_route_.route.html" class="tsd-kind-icon">Route</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#color" class="tsd-kind-icon">color</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#fare_class" class="tsd-kind-icon">fare_<wbr>class</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#long_name" class="tsd-kind-icon">long_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#short_name" class="tsd-kind-icon">short_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#text_color" class="tsd-kind-icon">text_<wbr>color</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_route_.route.html#type" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">

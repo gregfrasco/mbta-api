@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A JSON-API document with a single <a href="#lineresource">LineResource</a> resource</p>
+						<p>Line represents a combination of routes</p>
 					</div>
 				</div>
 			</section>
@@ -84,6 +84,101 @@
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_line_.line.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_line_.line.html#long_name" class="tsd-kind-icon">long_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_line_.line.html#short_name" class="tsd-kind-icon">short_<wbr>name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_line_.line.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_line_.line.html#text_color" class="tsd-kind-icon">text_<wbr>color</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="color" class="tsd-anchor"></a>
+					<h3>color</h3>
+					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Line.ts#L32">types/Line.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>In systems that have colors assigned to lines, the route_color field defines a color that corresponds to a line. The color must be provided as a six-character hexadecimal number, for example, &#39;00FFFF&#39;.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="long_name" class="tsd-anchor"></a>
+					<h3>long_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">long_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Line.ts#L26">types/Line.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Lengthier, public-facing name for the group of routes represented in this line</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="short_name" class="tsd-anchor"></a>
+					<h3>short_<wbr>name</h3>
+					<div class="tsd-signature tsd-kind-icon">short_<wbr>name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Line.ts#L20">types/Line.ts:20</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Short, public-facing name for the group of routes represented in this line</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="sort_order" class="tsd-anchor"></a>
+					<h3>sort_<wbr>order</h3>
+					<div class="tsd-signature tsd-kind-icon">sort_<wbr>order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Line.ts#L14">types/Line.ts:14</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Lines sort in ascending order</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="text_color" class="tsd-anchor"></a>
+					<h3>text_<wbr>color</h3>
+					<div class="tsd-signature tsd-kind-icon">text_<wbr>color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Line.ts#L9">types/Line.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This field can be used to specify a legible color to use for text drawn against a background of line_color. The color must be provided as a six-character hexadecimal number, for example, &#39;FFD700&#39;.</p>
+						</div>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -91,8 +186,59 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activeperiod_.html">"types/<wbr>Active<wbr>Period"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activity_.html">"types/<wbr>Activity"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_alert_.html">"types/<wbr>Alert"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facility_.html">"types/<wbr>Facility"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facilityproperty_.html">"types/<wbr>Facility<wbr>Property"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_informedentity_.html">"types/<wbr>Informed<wbr>Entity"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_types_line_.html">"types/<wbr>Line"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_livefacility_.html">"types/<wbr>Live<wbr>Facility"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_prediction_.html">"types/<wbr>Prediction"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_route_.html">"types/<wbr>Route"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_routepattern_.html">"types/<wbr>Route<wbr>Pattern"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_schedule_.html">"types/<wbr>Schedule"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_service_.html">"types/<wbr>Service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_shape_.html">"types/<wbr>Shape"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_stop_.html">"types/<wbr>Stop"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_trip_.html">"types/<wbr>Trip"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_vehicle_.html">"types/<wbr>Vehicle"</a>
 					</li>
 				</ul>
 			</nav>
@@ -102,6 +248,23 @@
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_types_line_.line.html" class="tsd-kind-icon">Line</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_line_.line.html#color" class="tsd-kind-icon">color</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_line_.line.html#long_name" class="tsd-kind-icon">long_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_line_.line.html#short_name" class="tsd-kind-icon">short_<wbr>name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_line_.line.html#sort_order" class="tsd-kind-icon">sort_<wbr>order</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_line_.line.html#text_color" class="tsd-kind-icon">text_<wbr>color</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">

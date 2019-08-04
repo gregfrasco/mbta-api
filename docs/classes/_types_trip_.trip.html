@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A JSON-API document with a single <a href="#tripresource">TripResource</a> resource</p>
+						<p>Representation of the journey of a particular vehicle through a given set of stops. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt">GTFS &#39;trips.txt&#39;</a></p>
 					</div>
 				</div>
 			</section>
@@ -84,6 +84,219 @@
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#bikes_allowed" class="tsd-kind-icon">bikes_<wbr>allowed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#block_id" class="tsd-kind-icon">block_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#headsign" class="tsd-kind-icon">headsign</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#route" class="tsd-kind-icon">route</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#route_pattern" class="tsd-kind-icon">route_<wbr>pattern</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#service" class="tsd-kind-icon">service</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#shape" class="tsd-kind-icon">shape</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_trip_.trip.html#wheelchair_accessible" class="tsd-kind-icon">wheelchair_<wbr>accessible</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="bikes_allowed" class="tsd-anchor"></a>
+					<h3>bikes_<wbr>allowed</h3>
+					<div class="tsd-signature tsd-kind-icon">bikes_<wbr>allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L65">types/Trip.ts:65</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicator of whether or not bikes are allowed on this trip: &#39;0&#39;, &#39;1&#39;, &#39;2&#39;</p>
+						</div>
+						<p>Bikes allowed (&#39;undefinedattributes/bikes_allowed&#39;) <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt">as defined in GTFS</a>:</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Meaning</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>No information</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>Vehicle being used on this particular trip can accommodate at least one bicycle</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>No bicycles are allowed on this trip</td>
+								</tr>
+						</tbody></table>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="block_id" class="tsd-anchor"></a>
+					<h3>block_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">block_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L50">types/Trip.ts:50</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>ID used to group sequential trips with the same vehicle for a given service_id. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt">GTFS &#39;trips.txt&#39; &#39;block_id&#39;</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="direction_id" class="tsd-anchor"></a>
+					<h3>direction_<wbr>id</h3>
+					<div class="tsd-signature tsd-kind-icon">direction_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L44">types/Trip.ts:44</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Direction in which trip is traveling: &#39;0&#39; or &#39;1&#39;.</p>
+						</div>
+						<p>The meaning of &#39;direction_id&#39; varies based on the route. You can programmatically get the direction names from &#39;/routes&#39; &#39;/data/{index}/attributes/direction_names&#39; or &#39;/routes/{id}&#39; &#39;/data/attributes/direction_names&#39;.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="headsign" class="tsd-anchor"></a>
+					<h3>headsign</h3>
+					<div class="tsd-signature tsd-kind-icon">headsign<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L35">types/Trip.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The text that appears on a sign that identifies the trip&#39;s destination to passengers. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt">GTFS &#39;trips.txt&#39; &#39;trip_headsign&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L29">types/Trip.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The text that appears in schedules and sign boards to identify the trip to passengers, for example, to identify train numbers for commuter rail trips. See <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt">GTFS &#39;trips.txt&#39; &#39;trip_short_name&#39;</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="route" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> route</h3>
+					<div class="tsd-signature tsd-kind-icon">route<span class="tsd-signature-symbol">:</span> <a href="_types_route_.route.html" class="tsd-signature-type">Route</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L85">types/Trip.ts:85</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A JSON-API document with a single <a href="#routeresource">RouteResource</a> resource</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="route_pattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> route_<wbr>pattern</h3>
+					<div class="tsd-signature tsd-kind-icon">route_<wbr>pattern<span class="tsd-signature-symbol">:</span> <a href="_types_routepattern_.routepattern.html" class="tsd-signature-type">RoutePattern</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L80">types/Trip.ts:80</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="service" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> service</h3>
+					<div class="tsd-signature tsd-kind-icon">service<span class="tsd-signature-symbol">:</span> <a href="_types_service_.service.html" class="tsd-signature-type">Service</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L75">types/Trip.ts:75</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A JSON-API document with a single <a href="#serviceresource">ServiceResource</a> resource</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="shape" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> shape</h3>
+					<div class="tsd-signature tsd-kind-icon">shape<span class="tsd-signature-symbol">:</span> <a href="_types_shape_.shape.html" class="tsd-signature-type">Shape</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L70">types/Trip.ts:70</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A JSON-API document with a single <a href="#shaperesource">ShapeResource</a> resource</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="wheelchair_accessible" class="tsd-anchor"></a>
+					<h3>wheelchair_<wbr>accessible</h3>
+					<div class="tsd-signature tsd-kind-icon">wheelchair_<wbr>accessible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Trip.ts#L23">types/Trip.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicator of wheelchair accessibility: &#39;0&#39;, &#39;1&#39;, &#39;2&#39;</p>
+						</div>
+						<p>Wheelchair accessibility (&#39;undefinedattributes/wheelchair_accessible&#39;) <a href="https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#tripstxt">as defined in GTFS</a>:</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Value</th>
+									<th>Meaning</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td>&#39;0&#39;</td>
+									<td>No information</td>
+								</tr>
+								<tr>
+									<td>&#39;1&#39;</td>
+									<td>Accessible (at stops allowing wheelchair_boarding)</td>
+								</tr>
+								<tr>
+									<td>&#39;2&#39;</td>
+									<td>Inaccessible</td>
+								</tr>
+						</tbody></table>
+					</div>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -91,8 +304,59 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activeperiod_.html">"types/<wbr>Active<wbr>Period"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activity_.html">"types/<wbr>Activity"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_alert_.html">"types/<wbr>Alert"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facility_.html">"types/<wbr>Facility"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facilityproperty_.html">"types/<wbr>Facility<wbr>Property"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_informedentity_.html">"types/<wbr>Informed<wbr>Entity"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_line_.html">"types/<wbr>Line"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_livefacility_.html">"types/<wbr>Live<wbr>Facility"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_prediction_.html">"types/<wbr>Prediction"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_route_.html">"types/<wbr>Route"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_routepattern_.html">"types/<wbr>Route<wbr>Pattern"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_schedule_.html">"types/<wbr>Schedule"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_service_.html">"types/<wbr>Service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_shape_.html">"types/<wbr>Shape"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_stop_.html">"types/<wbr>Stop"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_types_trip_.html">"types/<wbr>Trip"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_vehicle_.html">"types/<wbr>Vehicle"</a>
 					</li>
 				</ul>
 			</nav>
@@ -102,6 +366,38 @@
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_types_trip_.trip.html" class="tsd-kind-icon">Trip</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#bikes_allowed" class="tsd-kind-icon">bikes_<wbr>allowed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#block_id" class="tsd-kind-icon">block_<wbr>id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#headsign" class="tsd-kind-icon">headsign</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#route" class="tsd-kind-icon">route</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#route_pattern" class="tsd-kind-icon">route_<wbr>pattern</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#service" class="tsd-kind-icon">service</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#shape" class="tsd-kind-icon">shape</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_trip_.trip.html#wheelchair_accessible" class="tsd-kind-icon">wheelchair_<wbr>accessible</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">

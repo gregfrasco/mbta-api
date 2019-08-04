@@ -1,10 +1,14 @@
+import {Prediction} from './Prediction';
+import {Route} from './Route';
+import {Stop} from './Stop';
+import {Trip} from './Trip';
 /**
  * A schedule is the arrival drop off ('undefinedattributes/drop_off_type') time ('undefinedattributes/arrival_time') and departure pick up ('undefinedattributes/pickup_type') time ('undefinedattributes/departure_time') to/from a stop ('undefinedrelationships/stop/data/id') at a given sequence ('undefinedattributes/stop_sequence') along a trip ('undefinedrelationships/trip/data/id') going in a direction ('undefinedattributes/direction_id') on a route ('undefinedrelationships/route/data/id') when the trip is following a service ('undefinedrelationships/service/data/id') to determine when it is active.
 
 See [GTFS 'stop_times.txt'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stop_timestxt) for base specification.
 
  */
-export class ScheduleResource {
+export class Schedule {
   /**
    * | Value   | 'undefinedattributes/arrival_time' and 'undefinedattributes/departure_time' |
 |---------|---------------------------------------------------------------|
@@ -74,5 +78,25 @@ Format is ISO8601.
 
    */
   arrival_time: string;
+
+  /**
+   * A JSON-API document with a single [TripResource](#tripresource) resource
+   */
+  trip?: Trip;
+
+  /**
+   * A JSON-API document with a single [StopResource](#stopresource) resource
+   */
+  stop?: Stop;
+
+  /**
+   * A JSON-API document with a single [RouteResource](#routeresource) resource
+   */
+  route?: Route;
+
+  /**
+   * 
+   */
+  prediction?: Prediction;
 
 }

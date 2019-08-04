@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PredictionResource | mbta-api-typescript</title>
+	<title>Prediction | mbta-api-typescript</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_types_predictionresource_.html">&quot;types/PredictionResource&quot;</a>
+					<a href="../modules/_types_prediction_.html">&quot;types/Prediction&quot;</a>
 				</li>
 				<li>
-					<a href="_types_predictionresource_.predictionresource.html">PredictionResource</a>
+					<a href="_types_prediction_.prediction.html">Prediction</a>
 				</li>
 			</ul>
-			<h1>Class PredictionResource</h1>
+			<h1>Class Prediction</h1>
 		</div>
 	</div>
 </header>
@@ -82,7 +82,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PredictionResource</span>
+						<span class="target">Prediction</span>
 					</li>
 				</ul>
 			</section>
@@ -93,12 +93,18 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_predictionresource_.predictionresource.html#arrival_time" class="tsd-kind-icon">arrival_<wbr>time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_predictionresource_.predictionresource.html#departure_time" class="tsd-kind-icon">departure_<wbr>time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_predictionresource_.predictionresource.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_predictionresource_.predictionresource.html#schedule_relationship" class="tsd-kind-icon">schedule_<wbr>relationship</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_predictionresource_.predictionresource.html#status" class="tsd-kind-icon">status</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_predictionresource_.predictionresource.html#stop_sequence" class="tsd-kind-icon">stop_<wbr>sequence</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#alerts" class="tsd-kind-icon">alerts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#arrival_time" class="tsd-kind-icon">arrival_<wbr>time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#departure_time" class="tsd-kind-icon">departure_<wbr>time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#route" class="tsd-kind-icon">route</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#schedule" class="tsd-kind-icon">schedule</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#schedule_relationship" class="tsd-kind-icon">schedule_<wbr>relationship</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#stop" class="tsd-kind-icon">stop</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#stop_sequence" class="tsd-kind-icon">stop_<wbr>sequence</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#trip" class="tsd-kind-icon">trip</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_types_prediction_.prediction.html#vehicle" class="tsd-kind-icon">vehicle</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,12 +113,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="alerts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> alerts</h3>
+					<div class="tsd-signature tsd-kind-icon">alerts<span class="tsd-signature-symbol">:</span> <a href="_types_alert_.alert.html" class="tsd-signature-type">Alert</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L97">types/Prediction.ts:97</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A page of <a href="#alertresource">AlertResource</a> results</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="arrival_time" class="tsd-anchor"></a>
 					<h3>arrival_<wbr>time</h3>
 					<div class="tsd-signature tsd-kind-icon">arrival_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/PredictionResource.ts#L61">types/PredictionResource.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L67">types/Prediction.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -128,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">departure_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/PredictionResource.ts#L54">types/PredictionResource.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L60">types/Prediction.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -144,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">direction_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/PredictionResource.ts#L47">types/PredictionResource.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L53">types/Prediction.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,12 +176,37 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="route" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> route</h3>
+					<div class="tsd-signature tsd-kind-icon">route<span class="tsd-signature-symbol">:</span> <a href="_types_route_.route.html" class="tsd-signature-type">Route</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L92">types/Prediction.ts:92</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A JSON-API document with a single <a href="#routeresource">RouteResource</a> resource</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="schedule" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> schedule</h3>
+					<div class="tsd-signature tsd-kind-icon">schedule<span class="tsd-signature-symbol">:</span> <a href="_types_schedule_.schedule.html" class="tsd-signature-type">Schedule</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L87">types/Prediction.ts:87</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="schedule_relationship" class="tsd-anchor"></a>
 					<h3>schedule_<wbr>relationship</h3>
 					<div class="tsd-signature tsd-kind-icon">schedule_<wbr>relationship<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/PredictionResource.ts#L38">types/PredictionResource.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L44">types/Prediction.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -209,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/PredictionResource.ts#L20">types/PredictionResource.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L26">types/Prediction.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -219,12 +265,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="stop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stop</h3>
+					<div class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">:</span> <a href="_types_stop_.stop.html" class="tsd-signature-type">Stop</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L82">types/Prediction.ts:82</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A JSON-API document with a single <a href="#stopresource">StopResource</a> resource</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="stop_sequence" class="tsd-anchor"></a>
 					<h3>stop_<wbr>sequence</h3>
 					<div class="tsd-signature tsd-kind-icon">stop_<wbr>sequence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/259bbbf/src/types/PredictionResource.ts#L15">types/PredictionResource.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L21">types/Prediction.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -232,6 +293,36 @@
 							<p>The sequence the stop (&#39;undefinedrelationships/stop/data/id&#39;) is arrived at during the trip (&#39;undefinedrelationships/trip/data/id&#39;).  The stop sequence is monotonically increasing along the trip, but the &#39;stop_sequence&#39; along the trip are not necessarily consecutive.</p>
 						</div>
 						<p>See <a href="https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-stoptimeupdate">GTFS Realtime &#39;FeedMesage&#39; &#39;FeedEntity&#39; &#39;TripUpdate&#39; &#39;StopTimeUpdate&#39; &#39;stop_sequence&#39;</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="trip" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> trip</h3>
+					<div class="tsd-signature tsd-kind-icon">trip<span class="tsd-signature-symbol">:</span> <a href="_types_trip_.trip.html" class="tsd-signature-type">Trip</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L77">types/Prediction.ts:77</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A JSON-API document with a single <a href="#tripresource">TripResource</a> resource</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="vehicle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> vehicle</h3>
+					<div class="tsd-signature tsd-kind-icon">vehicle<span class="tsd-signature-symbol">:</span> <a href="_types_vehicle_.vehicle.html" class="tsd-signature-type">Vehicle</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/gregfrasco/MBTAtypes/blob/1d598a3/src/types/Prediction.ts#L72">types/Prediction.ts:72</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A JSON-API document with a single <a href="#vehicleresource">VehicleResource</a> resource</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -242,8 +333,59 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activeperiod_.html">"types/<wbr>Active<wbr>Period"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_activity_.html">"types/<wbr>Activity"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_alert_.html">"types/<wbr>Alert"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facility_.html">"types/<wbr>Facility"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_facilityproperty_.html">"types/<wbr>Facility<wbr>Property"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_informedentity_.html">"types/<wbr>Informed<wbr>Entity"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_line_.html">"types/<wbr>Line"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_livefacility_.html">"types/<wbr>Live<wbr>Facility"</a>
+					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_types_predictionresource_.html">"types/<wbr>Prediction<wbr>Resource"</a>
+						<a href="../modules/_types_prediction_.html">"types/<wbr>Prediction"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_route_.html">"types/<wbr>Route"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_routepattern_.html">"types/<wbr>Route<wbr>Pattern"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_schedule_.html">"types/<wbr>Schedule"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_service_.html">"types/<wbr>Service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_shape_.html">"types/<wbr>Shape"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_stop_.html">"types/<wbr>Stop"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_trip_.html">"types/<wbr>Trip"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_types_vehicle_.html">"types/<wbr>Vehicle"</a>
 					</li>
 				</ul>
 			</nav>
@@ -252,25 +394,43 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_types_predictionresource_.predictionresource.html" class="tsd-kind-icon">Prediction<wbr>Resource</a>
+						<a href="_types_prediction_.prediction.html" class="tsd-kind-icon">Prediction</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_predictionresource_.predictionresource.html#arrival_time" class="tsd-kind-icon">arrival_<wbr>time</a>
+								<a href="_types_prediction_.prediction.html#alerts" class="tsd-kind-icon">alerts</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_predictionresource_.predictionresource.html#departure_time" class="tsd-kind-icon">departure_<wbr>time</a>
+								<a href="_types_prediction_.prediction.html#arrival_time" class="tsd-kind-icon">arrival_<wbr>time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_predictionresource_.predictionresource.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a>
+								<a href="_types_prediction_.prediction.html#departure_time" class="tsd-kind-icon">departure_<wbr>time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_predictionresource_.predictionresource.html#schedule_relationship" class="tsd-kind-icon">schedule_<wbr>relationship</a>
+								<a href="_types_prediction_.prediction.html#direction_id" class="tsd-kind-icon">direction_<wbr>id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_predictionresource_.predictionresource.html#status" class="tsd-kind-icon">status</a>
+								<a href="_types_prediction_.prediction.html#route" class="tsd-kind-icon">route</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_types_predictionresource_.predictionresource.html#stop_sequence" class="tsd-kind-icon">stop_<wbr>sequence</a>
+								<a href="_types_prediction_.prediction.html#schedule" class="tsd-kind-icon">schedule</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_prediction_.prediction.html#schedule_relationship" class="tsd-kind-icon">schedule_<wbr>relationship</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_prediction_.prediction.html#status" class="tsd-kind-icon">status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_prediction_.prediction.html#stop" class="tsd-kind-icon">stop</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_prediction_.prediction.html#stop_sequence" class="tsd-kind-icon">stop_<wbr>sequence</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_prediction_.prediction.html#trip" class="tsd-kind-icon">trip</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_types_prediction_.prediction.html#vehicle" class="tsd-kind-icon">vehicle</a>
 							</li>
 						</ul>
 					</li>

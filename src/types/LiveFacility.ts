@@ -1,5 +1,11 @@
 /**
- * A JSON-API document with a single [LiveFacilityResource](#livefacilityresource) resource
+ * Live data about a given facility.
+
  */
 export class LiveFacility {
+  /**
+   * Time of last update
+   */
+  updated_at: string;
+
 }
