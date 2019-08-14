@@ -1,7 +1,7 @@
 {
-  "name": "mbta-api-typescript",
-  "version": "0.0.2",
-  "description": "",
+  "name": "mbta-api",
+  "version": "0.0.4",
+  "description": "A Basic MBTA api",
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && tsc",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregfrasco/MBTAtypes.git"
+    "url": "git+https://github.com/gregfrasco/mbta-api.git"
   },
-  "author": "",
+  "author": "Greg Frasco <frascog17@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gregfrasco/MBTAtypes/issues"
+    "url": "https://github.com/gregfrasco/mbta-api/issues"
   },
-  "homepage": "https://github.com/gregfrasco/MBTAtypes#readme",
+  "homepage": "https://github.com/gregfrasco/mbta-api#readme",
   "devDependencies": {
     "@types/node": "^12.6.9",
     "ts-node": "^8.3.0",
