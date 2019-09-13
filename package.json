@@ -1,6 +1,6 @@
 {
   "name": "mbta-api",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Basic MBTA api",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
     "test": "ts-node test/index.ts",
-    "clean": "rm -rf lib"
+    "clean": "rm -rf lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
