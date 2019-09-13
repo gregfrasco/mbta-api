@@ -1,6 +1,6 @@
 {
   "name": "mbta-api",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Basic MBTA api",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/gregfrasco/mbta-api/issues"
   },
-  "homepage": "https://github.com/gregfrasco/mbta-api#readme",
+  "homepage": "https://github.com/gregfrasco/mbta-api",
   "devDependencies": {
     "@types/node": "^12.6.9",
     "ts-node": "^8.3.0",

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import * as jsonapi from 'ts-jsonapi';
-import {Alert, Vehicle} from "..";
+import {Alert, Stop, Vehicle} from "..";
 import {Schedule} from "../types/Schedule";
 import {Prediction} from "../types/Prediction";
 
@@ -19,19 +19,23 @@ export class Client {
     }
 
     async getAlerts(route?:string, includes?:Array<'stops'|'routes'|'trips'|'facilities'>): Promise<Alert[]> {
-        return await this.mbtaRequest('/alerts', route, includes);
+        return this.mbtaRequest('/alerts', route, includes);
     }
 
     async getPredictions(route?:string, includes?:Array<'schedule'|'stop'|'route'|'trip'|'vehicle'|'alerts'>): Promise<Prediction[]> {
-        return await this.mbtaRequest('/predictions', route, includes);
+        return this.mbtaRequest('/predictions', route, includes);
     }
 
     async getVehicles(route?:string, includes?:Array<'stop'|'route'|'trip'>): Promise<Vehicle[]> {
-        return await this.mbtaRequest('/vehicles', route, includes);
+        return this.mbtaRequest('/vehicles', route, includes);
     }
 
     async getSchedule(route?:string, includes?:Array<'stop'|'route'|'trip'|'prediction'>): Promise<Schedule[]> {
-        return await this.mbtaRequest('/schedule', route, includes);
+        return this.mbtaRequest('/schedule', route, includes);
+    }
+
+    async getStops(route?:string, includes?:Array<'parent_station'|'child_stops'|'recommended_transfers'|'facilities'|'route'>): Promise<Stop[]> {
+        return this.mbtaRequest('/stops', route, includes);
     }
 
     private async mbtaRequest(url: string, route: string, includes: string[]) {

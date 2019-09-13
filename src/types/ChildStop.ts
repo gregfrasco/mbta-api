@@ -1,8 +1,7 @@
 import {WheelchairBoarding} from "./WheelchairBoarding";
 
-export class ParentStation {
+export class ChildStop {
 
-    id: string;
     address: string;
     atStreet: string;
     description: string;
@@ -11,10 +10,12 @@ export class ParentStation {
     longitude: number;
     municipality: string;
     name: string;
-    parentStation: string;
+    onStreet: string;
     platformCode: string;
     platformName: string;
-    vehicleType: string;
+    vehicleType: number;
     wheelchairBoarding: WheelchairBoarding;
+    id: string;
     zone: string;
+
 }

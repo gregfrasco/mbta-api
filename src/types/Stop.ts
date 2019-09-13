@@ -2,6 +2,8 @@
  * Physical location where transit can pick-up or drop-off passengers. See https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt for more details and https://github.com/mbta/gtfs-documentation/blob/master/reference/gtfs.md#stopstxt for specific extensions.
  */
 import { ParentStation } from "./ParentStation";
+import {ChildStop} from "./ChildStop";
+import {WheelchairBoarding} from "./WheelchairBoarding";
 
 export class Stop {
 
@@ -19,7 +21,7 @@ export class Stop {
 
 
      */
-    wheelchairBoarding: number;
+    wheelchairBoarding: WheelchairBoarding;
 
     /**
      * The type of transportation used at the stop. 'vehicle_type' will be a valid routes.txt 'route_type' value:
@@ -113,5 +115,11 @@ export class Stop {
      *
      */
     parentStation?: ParentStation;
+
+    childStops?: ChildStop[];
+
+    recommendedTransfers?: any[];
+
+    zone: string;
 
 }

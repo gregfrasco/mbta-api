@@ -14,6 +14,7 @@ import { Shape } from './types/Shape'
 import { Stop } from './types/Stop'
 import { Trip } from './types/Trip'
 import { Vehicle } from './types/Vehicle'
+import { WheelchairBoarding } from './types/WheelchairBoarding';
 
 import { Client } from './api/client'
 
@@ -34,5 +35,6 @@ export {
     Shape,
     Stop,
     Trip,
-    Vehicle
+    Vehicle,
+    WheelchairBoarding
 }

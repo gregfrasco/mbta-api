@@ -16,6 +16,8 @@ import { Client } from 'mbta-api';
 
 const client = new Client();
 
-const redLineAlerts = client.getAlerts('Red');
-redLineAlerts[0].cause;
+async function getAlerts() {
+    const redLineAlerts = await client.getAlerts('Red');
+    redLineAlerts[0].cause;
+}
 ```
