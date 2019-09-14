@@ -2,8 +2,7 @@
  * Physical location where transit can pick-up or drop-off passengers. See https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt for more details and https://github.com/mbta/gtfs-documentation/blob/master/reference/gtfs.md#stopstxt for specific extensions.
  */
 import { ParentStation } from "./ParentStation";
-import {ChildStop} from "./ChildStop";
-import {WheelchairBoarding} from "./WheelchairBoarding";
+import { WheelchairBoarding } from "./WheelchairBoarding";
 
 export class Stop {
 
@@ -21,7 +20,7 @@ export class Stop {
 
 
      */
-    wheelchairBoarding: WheelchairBoarding;
+    wheelchairBoarding?: WheelchairBoarding;
 
     /**
      * The type of transportation used at the stop. 'vehicle_type' will be a valid routes.txt 'route_type' value:
@@ -36,42 +35,42 @@ export class Stop {
 
 
      */
-    vehicleType: string;
+    vehicleType?: number;
 
     /**
      * A textual description of the platform or track. See [MBTA extensions to GTFS](https://docs.google.com/document/d/1RoQQj3_-7FkUlzFP4RcK1GzqyHp4An2lTFtcmW0wrqw/view).
 
      */
-    platformName: string;
+    platformName?: string;
 
     /**
      * A short code representing the platform/track (like a number or letter). See [GTFS 'stops.txt' 'platform_code'](https://developers.google.com/transit/gtfs/reference/gtfs-extensions#stopstxt_1).
 
      */
-    platformCode: string;
+    platformCode?: string;
 
     /**
      * The street on which the stop is located.
      */
-    onStreet: string;
+    onStreet?: string;
 
     /**
      * Name of a stop or station in the local and tourist vernacular.  See [GTFS 'stops.txt' 'stop_name](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt)
 
      */
-    name: string;
+    name?: string;
 
     /**
      * The municipality in which the stop is located.
      */
-    municipality: string;
+    municipality?: string;
 
     /**
      * Longitude of the stop or station. Degrees East, in the [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#Longitudes_on_WGS.C2.A084) coordinate system. See
      [GTFS 'stops.txt' 'stop_lon'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt).
 
      */
-    longitude: number;
+    longitude?: number;
 
     /**
      * The type of the stop.
@@ -86,40 +85,40 @@ export class Stop {
      See also [GTFS 'stops.txt' 'location_type'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt).
 
      */
-    locationType: number;
+    locationType?: number;
 
     /**
      * Latitude of the stop or station.  Degrees North, in the [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS.C2.A084) coordinate system. See [GTFS 'stops.txt' 'stop_lat'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt).
 
      */
-    latitude: number;
+    latitude?: number;
 
     /**
      * Description of the stop. See [GTFS 'stops.txt' 'stop_desc'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt).
 
      */
-    description: string;
+    description?: string;
 
     /**
      * The cross street at which the stop is located.
      */
-    atStreet: string;
+    atStreet?: string;
 
     /**
      * A street address for the station. See [MBTA extensions to GTFS](https://docs.google.com/document/d/1RoQQj3_-7FkUlzFP4RcK1GzqyHp4An2lTFtcmW0wrqw/view).
 
      */
-    address: string;
+    address?: string;
 
     /**
      *
      */
     parentStation?: ParentStation;
 
-    childStops?: ChildStop[];
+    childStops?: Stop[];
 
     recommendedTransfers?: any[];
 
-    zone: string;
+    zone?: string;
 
 }

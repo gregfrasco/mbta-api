@@ -1,8 +1,12 @@
 {
   "name": "mbta-api",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "A Basic MBTA api",
-  "main": "index.js",
+  "main": "lib",
+  "types": "lib",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "npm run clean && tsc",
     "webpack": "webpack",
