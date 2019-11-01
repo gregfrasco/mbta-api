@@ -6,7 +6,6 @@ import { FacilityProperty } from './types/FacilityProperty'
 import { InformedEntity } from './types/InformedEntity'
 import { Line } from './types/Line'
 import { LiveFacility } from './types/LiveFacility'
-import { ParentStation } from "./types/ParentStation"
 import { Route } from './types/Route'
 import { RoutePattern } from './types/RoutePattern'
 import { Service } from './types/Service'
@@ -28,7 +27,6 @@ export {
     InformedEntity,
     Line,
     LiveFacility,
-    ParentStation,
     Route,
     RoutePattern,
     Service,

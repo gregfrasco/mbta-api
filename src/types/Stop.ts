@@ -1,7 +1,6 @@
 /**
  * Physical location where transit can pick-up or drop-off passengers. See https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt for more details and https://github.com/mbta/gtfs-documentation/blob/master/reference/gtfs.md#stopstxt for specific extensions.
  */
-import { ParentStation } from "./ParentStation";
 import { WheelchairBoarding } from "./WheelchairBoarding";
 
 export class Stop {
@@ -41,29 +40,29 @@ export class Stop {
      * A textual description of the platform or track. See [MBTA extensions to GTFS](https://docs.google.com/document/d/1RoQQj3_-7FkUlzFP4RcK1GzqyHp4An2lTFtcmW0wrqw/view).
 
      */
-    platformName?: string;
+    platformName?: string | undefined | null;
 
     /**
      * A short code representing the platform/track (like a number or letter). See [GTFS 'stops.txt' 'platform_code'](https://developers.google.com/transit/gtfs/reference/gtfs-extensions#stopstxt_1).
 
      */
-    platformCode?: string;
+    platformCode?: string | undefined | null;
 
     /**
      * The street on which the stop is located.
      */
-    onStreet?: string;
+    onStreet?: string | undefined | null;
 
     /**
      * Name of a stop or station in the local and tourist vernacular.  See [GTFS 'stops.txt' 'stop_name](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt)
 
      */
-    name?: string;
+    name?: string | undefined | null;
 
     /**
      * The municipality in which the stop is located.
      */
-    municipality?: string;
+    municipality?: string | undefined | null;
 
     /**
      * Longitude of the stop or station. Degrees East, in the [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#Longitudes_on_WGS.C2.A084) coordinate system. See
@@ -97,28 +96,28 @@ export class Stop {
      * Description of the stop. See [GTFS 'stops.txt' 'stop_desc'](https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt).
 
      */
-    description?: string;
+    description?: string | undefined | null;
 
     /**
      * The cross street at which the stop is located.
      */
-    atStreet?: string;
+    atStreet?: string | undefined | null;
 
     /**
      * A street address for the station. See [MBTA extensions to GTFS](https://docs.google.com/document/d/1RoQQj3_-7FkUlzFP4RcK1GzqyHp4An2lTFtcmW0wrqw/view).
 
      */
-    address?: string;
+    address?: string | undefined | null;
 
     /**
      *
      */
-    parentStation?: ParentStation;
+    parentStation?: Stop | undefined | null;
 
     childStops?: Stop[];
 
     recommendedTransfers?: any[];
 
-    zone?: string;
+    zone?: string | undefined | null;
 
 }

@@ -43,32 +43,32 @@ export class Alert {
     /**
      * A URL for extra details, such as outline construction or maintenance plans.
      */
-    url: string;
+    url: string | undefined | null;
 
     /**
      * Date/Time alert last updated. Format is ISO8601.
      */
-    updatedAt: string;
+    updatedAt: string | undefined | null;
 
     /**
      * Summarizes when an alert is in effect.
      */
-    timeframe: string;
+    timeframe: string | undefined | null;
 
     /**
      * A shortened version of 'undefinedattributes/header'.
      */
-    shortHeader: string;
+    shortHeader: string | undefined | null;
 
     /**
      * How severe the alert it from least ('0') to most ('10') severe.
      */
-    severity: number;
+    severity: string | undefined | null;
 
     /**
      * Summarizes the service and the impact to that service.
      */
-    serviceEffect: string;
+    serviceEffect: string | undefined | null;
 
     /**
      * Identifies whether alert is a new or old, in effect or upcoming.
@@ -82,13 +82,13 @@ export class Alert {
 
 
      */
-    lifecycle: string;
+    lifecycle: string | undefined | null;
 
     /**
      * This plain-text string will be highlighted, for example in boldface. See [GTFS Realtime 'FeedMessage' 'FeedEntity' 'Alert' 'header_text'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-alert)
 
      */
-    header: string;
+    header: string | undefined | null;
 
     /**
      * The effect of this problem on the affected entity.
@@ -132,18 +132,18 @@ export class Alert {
 
 
      */
-    effect: string;
+    effect: string | undefined | null;
 
     /**
      * This plain-text string will be formatted as the body of the alert (or shown on an explicit "expand" request by the user). The information in the description should add to the information of the header. See [GTFS Realtime 'FeedMessage' 'FeedEntity' 'Alert' 'description_text'](https://github.com/google/transit/blob/master/gtfs-realtime/spec/en/reference.md#message-alert)
 
      */
-    description: string;
+    description: string | undefined | null;
 
     /**
      * Date/Time alert created. Format is ISO8601.
      */
-    createdAt: string;
+    createdAt: string | undefined | null;
 
     /**
      * What is causing the alert.
@@ -197,12 +197,12 @@ export class Alert {
 
 
      */
-    cause: string;
+    cause: string | undefined | null;
 
     /**
      * Set if alert is meant to be displayed prominently, such as the top of every page.
      */
-    banner: string;
+    banner: string | undefined | null;
 
     /**
      * A JSON-API document with a single [FacilityResource](#facilityresource) resource
