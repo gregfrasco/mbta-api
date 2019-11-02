@@ -34,7 +34,7 @@ export class Stop {
 
 
      */
-    vehicleType?: number;
+    vehicleType?: number | undefined | null;
 
     /**
      * A textual description of the platform or track. See [MBTA extensions to GTFS](https://docs.google.com/document/d/1RoQQj3_-7FkUlzFP4RcK1GzqyHp4An2lTFtcmW0wrqw/view).
